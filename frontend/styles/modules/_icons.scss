@@ -1,0 +1,11 @@
+
+a, button, label {
+	&:hover {
+		.icon-svg-letter {
+			transition: none;
+		}		
+	}
+}
+.icon-svg-letter {
+	transition: .3s;
+}

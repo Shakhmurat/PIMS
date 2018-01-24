@@ -1,0 +1,19 @@
+
+.tabs {
+	margin: 20px 0 25px;
+}
+
+.tab-link {
+	margin-right: 10px;
+	&.active {
+		border-bottom: 2px solid $color-secondary;
+	}
+}
+
+.tab-item {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+

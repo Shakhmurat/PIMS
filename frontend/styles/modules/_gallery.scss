@@ -1,0 +1,45 @@
+
+.gallery {
+	display: flex;
+	margin-left: -6px;
+	margin-right: -6px;
+}
+
+.gallery-item-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 230px;
+	margin: 6px;
+	.form-group {
+		margin: 0;
+	}
+	label {
+		cursor: pointer;
+	}
+}
+
+.gallery-item-img {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.gallery-hint {
+	width: 365px;
+	margin: 6px;
+	p {
+		padding: 15px 15px 15px 45px;
+		border-radius: 4px;
+		background-color: $color-gray;
+		background-image: url(../images/icon-question.svg);
+		background-repeat: no-repeat;
+		background-position: 15px 20px; 
+	}
+}

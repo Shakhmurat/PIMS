@@ -1,0 +1,17 @@
+
+a {
+	color: $color-primary;
+	transition: $transition-primary;
+  text-decoration: none;
+	&:focus {
+    color: $color-primary;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover,
+  &:active {
+    color: $color-secondary;
+    transition: none;
+  }
+}

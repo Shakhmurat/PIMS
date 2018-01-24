@@ -1,0 +1,47 @@
+
+table {
+	width: 100%;
+	th {
+		padding: 10px;
+		color: #fff;
+		line-height: 22px;
+		text-align: left;
+		vertical-align: middle;
+		background-color: $color-secondary;
+	}
+	tr {
+		position: relative;
+		&:nth-child(odd) {
+			background-color: $color-gray;
+		}
+		&:hover {
+			.td-hint {
+				right: -25px;
+				opacity: 1;
+				visibility: visible;
+			}		
+		}
+	}
+	td {
+		padding: 5px 10px;
+		font-size: 17px;
+		vertical-align: middle;
+	}
+	.td-hint {
+		position: absolute;
+		top: 50%;
+		right: -30px;
+		transform: translateY(-50%);
+		transition: $transition-primary;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.table--vendor-code {
+	th {
+		&:first-child {
+			width: 100px;
+		}
+	}
+}

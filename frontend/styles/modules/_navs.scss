@@ -1,0 +1,16 @@
+
+.nav-header {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.nav-header-link {
+	display: inline-block;
+	padding: 10px;
+	&.active {
+		position: relative;
+		color: #fff;
+		border-radius: 4px;
+		background-color: $color-secondary;
+	}
+}

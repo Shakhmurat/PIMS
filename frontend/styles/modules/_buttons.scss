@@ -1,0 +1,87 @@
+
+button {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.btn {
+	font-family: $font-primary-regular;
+	font-weight: normal;
+	font-style: normal;
+	outline: none !important;
+	border: 1px solid $color-gray;
+	transition: $transition-primary;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	&:active {
+		box-shadow: none;
+	}
+	&:hover,
+	&:active {
+		transition: none;
+	}
+}
+
+.btn--primary {
+	margin: 20px 0;
+	padding: 9px 25px 8px;
+	font-size: 18px;
+	font-weight: 500;
+	color: $color-primary;
+	border: 1px solid $color-secondary;
+	background-color: transparent;
+	&:focus {
+		color: $color-primary;
+	}
+	&:hover,
+	&:active {
+		color: $color-primary;
+		background-color: rgba($color-secondary, .1);
+	}
+
+	&.btn--success {
+		// background-color: $color-green;
+		box-shadow: 8px 8px 16px 0 rgba(#07021E, .1);
+		&:focus {
+			color: #fff;
+		}
+		&:hover,
+		&:active {
+			color: #fff;
+			background-color: #4DBE73;
+		}
+		&:active  {
+			box-shadow: inset -1px 1px 12px rgba(#07021E, .15), 5px 5px 16px 0 rgba(#07021E, .08);
+		}
+	}
+}
+
+.btn--edit {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	vertical-align: middle;
+	&:hover {
+		background-color: $color-secondary;
+		.icon-svg-letter {
+			fill: #fff;
+		}
+	}
+}
+
+.btn--close {
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	border-radius: 50%;
+	margin: 2px 0 2px 5px;
+	font-size: 26px;
+	&:hover {
+		color: #fff;
+		border-color: $color-secondary;
+		background-color: $color-secondary;
+	}
+}
