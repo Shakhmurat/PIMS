@@ -16,9 +16,12 @@ table {
 		}
 		&:hover {
 			.td-hint {
-				right: -25px;
+				// right: 0;
 				opacity: 1;
 				visibility: visible;
+				.btn--edit {
+					right: -15px;
+				}
 			}		
 		}
 	}
@@ -27,15 +30,6 @@ table {
 		font-size: 17px;
 		vertical-align: middle;
 	}
-	.td-hint {
-		position: absolute;
-		top: 50%;
-		right: -30px;
-		transform: translateY(-50%);
-		transition: $transition-primary;
-		opacity: 0;
-		visibility: hidden;
-	}
 }
 
 .table--vendor-code {
@@ -43,5 +37,18 @@ table {
 		&:first-child {
 			width: 100px;
 		}
+	}
+}
+
+.td-hint {
+	width: 0;
+	height: 0;
+	float: right;
+	transition: $transition-primary;
+	opacity: 0;
+	visibility: hidden;
+	.btn--edit {
+		position: absolute;
+		right: -20px;
 	}
 }
