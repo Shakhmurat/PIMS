@@ -10,13 +10,11 @@ table {
 		background-color: $color-secondary;
 	}
 	tr {
-		position: relative;
 		&:nth-child(odd) {
 			background-color: $color-gray;
 		}
 		&:hover {
 			.td-hint {
-				// right: 0;
 				opacity: 1;
 				visibility: visible;
 				.btn--edit {
@@ -41,6 +39,7 @@ table {
 }
 
 .td-hint {
+	position: relative;
 	width: 0;
 	height: 0;
 	float: right;
